@@ -1,0 +1,16 @@
+p{text-align: center;padding-left: 15%;padding-right: 15%;font-size: 1.24em;}
+#olref{text-align: center; left;padding-left: 18%;padding-right: 15%;font-size: 1.24em;}
+.nodec{list-style: none; text-align: center; font-size: 1.24em;}
+.tt{font-size: 1.5em;}
+body {
+	overflow-x:hidden;
+  padding-top: 5rem;
+  text-align: center;
+  max-width:100%;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.chart{width: 100%}
+li{display:block;width:100%;}
