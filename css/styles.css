@@ -1,0 +1,10 @@
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+    .little-hidden {
+        visibility: visible;
+    }
+}
+
+.little-hidden {
+    visibility: collapse;
+}
