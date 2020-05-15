@@ -5,4 +5,4 @@ https://www.edoardoottavianelli.it
 
 Template: https://mdbootstrap.com
 
-Instagram web-component: https://github.com/ptkdev
+Instagram web-component: https://github.com/ptkdev-components/webcomponent-instagram-widget
