@@ -1,9 +1,8 @@
 # edoardoottavianelli.it
 My personal website
 
-================================================================================
-======================= https://www.edoardoottavianelli.it =====================
-================================================================================
+ https://www.edoardoottavianelli.it
+ ===
 
 Template: https://mdbootstrap.com
 
