@@ -1,4 +1,5 @@
-<h1><a href="https://www.edoardoottavianelli.it" target="blank">edoardoottavianelli.it</a></h1>
+# [edoardoottavianelli.it](https://www.edoardoottavianelli.it)
+
 
 My personal website
 
