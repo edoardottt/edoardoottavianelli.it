@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/edoardottt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.edoardoottavianelli.it
+  * I am edoardottt (https://keybase.io/edoardottt) on keybase.
+  * I have a public key with fingerprint 858D EB86 9B78 3B0E 0D34  0044 B59B 258A 3F5B E93E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101a15d15333fa7a1fdbf7fcb1f76067a4985dcc02961acd5f12ee34c5018b32b990a",
+      "fingerprint": "858deb869b783b0e0d340044b59b258a3f5be93e",
+      "host": "keybase.io",
+      "key_id": "b59b258a3f5be93e",
+      "kid": "0101a15d15333fa7a1fdbf7fcb1f76067a4985dcc02961acd5f12ee34c5018b32b990a",
+      "uid": "e2fcd2a5d812479cd1305c485fb32519",
+      "username": "edoardottt"
+    },
+    "service": {
+      "hostname": "www.edoardoottavianelli.it",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1598129234,
+  "expire_in": 157680000,
+  "prev": "984e510e29227cf364e700d3579653bb7739a5cd2d1b340058b0a3c0dde8689b",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkn9QFGUYxw86zY6gUsabC2Jq+zFwHbR7u3u7e1cIGBhJicKA0Ew3++6+Cyvn
+7Xm3HHfiRSRgKmSGTWMXkzCOYA6FEKURPyuicBDHpBiRydIZ0BqTI0UHqF0G/+vP
+3n/eeZ/5PN/n+zzP+27kfRpdWGfw6X3rXptODhueBhp7alV+OQIk3o9Yy5ESuHRB
+Bw89sr1E5BErgmIoxmIkj5E4jgssxWICDwRK4AAmUBbUQrEEQ5M8x6FmxoKxHE8K
+mBlCnOBIFKMBbgYMg7KICRFEZxF0u9yiU1ZkaZLmIaAtDKBoHKAQ5XECRQkCkAww
+kzSLCySADA6VxGLJo2Yo5gDrgUmipMSUh33J3n/w/7Pv0iU5aBY43sySPI2ZCYrh
+eAxHSY6gSUFBSYxRQQ90O9ntUKV5iXXzkizLSMCEKHGvyEF1tGovy0xZWVnSMqeA
+rFdkndDhEJNEWdFyuSVZ4iSHwhXLsstjVXVkv2spEQL7sqQdiE5emauS4YVujyg5
+ESumkJwsqjUwklHsMmacMCHQ5xLd0C6qBElZaFQ5xWoh6FU0GZqAJIZCBTZTnIBb
+CEihyk5IirGQOAAUhTMsqUyAx4C6KJIGKItzKM9D2kIzAFG73OGUEKtSSmaLFEmP
+WORk5VI3RAK6veG4VhOm0zy29gltdd31mqDPFhVJaF689xdXhKsfUaN74OF7kSnd
+Q4vrBif0G6mhgcyMmvjogvXjhw7q3/vTdrXP59shbS33lmqTkLfiio/r21vl36zZ
++veN35417io4/Il+W4L/h5L93Zmm/oSm0GTXkbgvbqw9f2fk95Utm1wsfSDB4Mf6
+2qY6b9r0G0ei2nJzQqOpQ6tOxD83OWo+WXuz7oMGR+2bo5Oz9PPnhjbPaY2Byvnh
+AVvO3OdrLiLpsXO3C9Pl2JT+RE2ecX12t+nBgGvgUcMLtVcX9eGJWNqpqNOe1I7c
++7dwvW+kN/046PtDqNTUvD3YU/N4p/T1S99x11D6yfZcY/8R7eDx2oozjfX6o1PN
+0x1dvTEnyMNEX/VT4xpDysvi7Iw744wt7UBXZYRgeHZCvOway+8GVvvg0bgVcem+
+nVLAUO+XwaU6T2ii8Nb8V9Gm/DnHM1d6f73dHBfvzYnkO3efXANTqpP3RmyoEpkr
+fxVqX13d9XHDufzm8eiiT2M+S+p3Yds+/ObGhcbgP1s/2mm09ITeOWs71p71JX+r
+ZVXB+b/HT5X5VhZkX8was/SvDo7lRYG2mO8zpyKQnhlDeN/+S/6q+UDiTOwvEbsa
+dr+iGw7W7dE1dmwaubC4OSsIE2Lv3kV4T0vZz3brwpbWrPbL18Pz8+5UtGgS9tlL
+HlnYnjc6dCgUuHbs9VlsWl7YE6rnNKd/qs1oIipap51pyelRWsu/
+=TSJY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/edoardottt
+
+==================================================================
