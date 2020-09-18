@@ -1,0 +1,9 @@
+ - Problems and reason of Climate Change
+ - Scientists write their own code
+ - Geoscientific data model https://youtu.be/n0mupl4FZsQ
+ - SuperComputers and https://sustainability.google/environment/
+ - BreakTrough Energy founded by Gates http://www.b-t.energy/landscape/
+	Members of the Breakthrough Energy Coalition (BEC), which numbers among its members Jeff Bezos from Amazon, Jack Ma from the Ali Baba group and Richard Branson, have committed to investing more than $1 billion in new technologies over the next 20 years.
+	- Transport Algorithms 
+		https://www.researchgate.net/publication/272295180_The_reduction_of_CO2_emissions_Transport_optimization_approach_to_decrease_the_Vehicle_Miles_Travelled
+		https://www.worldbank.org/en/news/press-release/2016/05/05/leaders-call-for-global-action-to-reduce-transports-climate-footprint
