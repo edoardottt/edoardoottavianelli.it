@@ -375,6 +375,50 @@ End Namespace
                                     are stored in the heap while Value Type variables are stored in the stack" [2].</i>
                             </div>
                             <img src="reference-type.png" alt="reference and value types">
+                            <b>Code Example: Passing Value Type Variables</b>
+                            <pre>
+static void ChangeValue(int x)
+{
+    x =  200;
+    Console.WriteLine(x);
+}
+
+static void Main(string[] args)
+{
+    int i = 100;
+
+    Console.WriteLine(i);
+    
+    ChangeValue(i);
+    
+    Console.WriteLine(i);
+}
+
+// OUTPUT:
+100
+200
+100 
+</pre>
+                            <b>Code Example: Passing Reference Type Variable </b>
+                            <pre>
+static void ChangeReferenceType(Student std2)
+{
+    std2.StudentName = "Steve";
+}
+                                
+static void Main(string[] args)
+{
+    Student std1 = new Student();
+    std1.StudentName = "Bill";
+                                    
+    ChangeReferenceType(std1);
+                                
+    Console.WriteLine(std1.StudentName);
+}
+
+// OUTPUT:
+Steve
+</pre>
                             </p>
                             <h5>
                                 <b>3_A)</b> Search on the web how to drag drop the name of any file into a richtextbox
@@ -429,6 +473,9 @@ End Namespace
                             [3]<a
                                 href="https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/builtin-types/value-types">
                                 Microsoft Docs - Value types (C# reference) </a>
+                            <br>
+                            [4]<a href="https://www.tutorialsteacher.com/csharp/csharp-value-type-and-reference-type">
+                                Tutorial Teacher - Value Type and Reference Type </a>
                         </div>
                         <!--Grid column-->
                         <!--Grid column CENTER-->
