@@ -260,7 +260,8 @@
                             attributes, for a particular entity; and these values could change as the time pass.
                             </p>
                             <h5>
-                                3_R) Explain the differences between a (univariate) dataset and a (univariate) frequency
+                                <b>3_R)</b> Explain the differences between a (univariate) dataset and a (univariate)
+                                frequency
                                 distribution. Given a distribution can we reconstruct the dataset? why ?
                                 How would you describe the change of amount of information passing from the dataset to
                                 the distribution?</h5>
@@ -270,24 +271,114 @@
 
                             <h4>Applications / Practice (A)</h4>
                             <h5>
-                                1_A) Create, in both languages C# and VB.NET, a program which does the following simple
+                                <b>1_A)</b> Create, in both languages C# and VB.NET, a program which does the following
+                                simple
                                 tasks:
-
-                                when a button is pressed some text appears in a richtexbox on the startup form
-                                when another button is pressed the richtextbox is cleared
-                                when the mouse enters the richtextbox, the richtext backcolor is switched to another
-                                color
-                                when the mouse leaves the richtextbox, the richtext backcolor is reset to its original
-                                state
+                                <ul>
+                                    <li>when a button is pressed some text appears in a richtexbox on the startup form
+                                    </li>
+                                    <li>when another button is pressed the richtextbox is cleared</li>
+                                    <li>when the mouse enters the richtextbox, the richtext backcolor is switched to
+                                        another
+                                        color</li>
+                                    <li>when the mouse leaves the richtextbox, the richtext backcolor is reset to its
+                                        original
+                                        state</li>
+                                </ul>
                             </h5>
-                            <p>intro placeholder</p>
+                            <p>
+                                <b>C#</b>:
+                            <pre>
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp4
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "Hello, World!";
+        }
+
+        private void richTextBox1_MouseHover(object sender, EventArgs e)
+        {
+            richTextBox1.BackColor = Color.Red;
+        }
+
+        private void richTextBox1_MouseLeave(object sender, EventArgs e)
+        {
+            richTextBox1.BackColor = Color.Empty;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "";
+        }
+    }
+}
+</pre>
+                            <b>VB.Net</b>:
+
+                            <pre>
+Imports System
+Imports System.Drawing
+Imports System.Windows.Forms
+
+Namespace WindowsFormsApp4
+    Public Partial Class Form1
+        Inherits Form
+
+        Public Sub New()
+            InitializeComponent()
+        End Sub
+
+        Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
+            richTextBox1.Text = "Hello, World!"
+        End Sub
+
+        Private Sub richTextBox1_MouseHover(ByVal sender As Object, ByVal e As EventArgs)
+            richTextBox1.BackColor = Color.Red
+        End Sub
+
+        Private Sub richTextBox1_MouseLeave(ByVal sender As Object, ByVal e As EventArgs)
+            richTextBox1.BackColor = Color.Empty
+        End Sub
+
+        Private Sub button2_Click(ByVal sender As Object, ByVal e As EventArgs)
+            richTextBox1.Text = ""
+        End Sub
+    End Class
+End Namespace
+
+</pre>
+                            </p>
                             <h5>
-                                2_A) Create or search some simple but illuminating example of code which clearly shows
+                                <b>2_A)</b> Create or search some simple but illuminating example of code which clearly
+                                shows
                                 the different behaviors of reference value data types and value type data types.
                             </h5>
-                            <p>intro placeholder</p>
+                            <p>The Types in .NET Framework, but this is applied for all programming languages having
+                                concepts of pointers, are either
+                                treated by Value Type or by Reference Type.
+                            <div text-align="center"><i>"A
+                                    Value Type holds the data within its own memory allocation and a Reference Type
+                                    contains
+                                    a pointer to another memory location that holds the real data. Reference Type
+                                    variables
+                                    are stored in the heap while Value Type variables are stored in the stack" [2].</i>
+                            </div>
+                            <img src="reference-type.png" alt="reference and value types">
+                            </p>
                             <h5>
-                                3_A) Search on the web how to drag drop the name of any file into a richtextbox on your
+                                <b>3_A)</b> Search on the web how to drag drop the name of any file into a richtextbox
+                                on your
                                 startup form and try to implement this feature in your first program (e.g.
                                 <a href="
                                 https://stackoverflow.com/questions/11686631/drag-drop-and-get-file-path-in-vb-net">Drag
@@ -302,7 +393,7 @@
 
                             <h4>Researches about applications (RA)</h4>
                             <h5>
-                                1_RA) Observe carefully the different way C# and VB.NET deals with events and the
+                                <b>1_RA)</b> Observe carefully the different way C# and VB.NET deals with events and the
                                 different ways to define the event handlers. Discuss in your blog what differences
                                 you
                                 can spot. Which way do you find easier or more comfortable and why ?
@@ -310,7 +401,7 @@
                             </h5>
                             <p>intro placeholder</p>
                             <h5>
-                                2_RA) Note that any C# will have a Program.cs file in its solution folder while
+                                <b>2_RA)</b> Note that any C# will have a Program.cs file in its solution folder while
                                 VB.NET
                                 does not. On the other hand, VB.NET has the file Application.Designer.vb within the
                                 project folder. Try to research what these (automatically created) files are doing
@@ -326,8 +417,18 @@
                             <!--REFERENCES-->
                             <h4>References</h4>
                             [1]<a
-                                href="https://statistics.laerd.com/statistical-guides/descriptive-inferential-statistics.php">Statistics.laerd.com
+                                href="https://statistics.laerd.com/statistical-guides/descriptive-inferential-statistics.php">
+                                Statistics.laerd.com
                                 - Descriptive and inferential satistics</a>
+                            <br>
+                            [2]<a href="http://net-informations.com/faq/general/valuetype-referencetype.htm">
+                                NET-Informations
+                                -
+                                Difference between a Value Type and a Reference Type </a>
+                            <br>
+                            [3]<a
+                                href="https://docs.microsoft.com/it-it/dotnet/csharp/language-reference/builtin-types/value-types">
+                                Microsoft Docs - Value types (C# reference) </a>
                         </div>
                         <!--Grid column-->
                         <!--Grid column CENTER-->
