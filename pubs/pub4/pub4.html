@@ -201,7 +201,7 @@
                                 from
                                 the larger unknown population.
                                 The statistical population in the inferential statistics refers to only data we
-                                really process to make conclusions.
+                                really process to make conclusions <a href="#link1">[1]</a>.
                             </p>
                             <h5>
                                 <b>2_R)</b> Describe the notion of statistical attributes/variables and dataset, and
@@ -269,8 +269,80 @@
                                 distribution. Given a distribution can we reconstruct the dataset? why ?
                                 How would you describe the change of amount of information passing from the dataset to
                                 the distribution?</h5>
-                            <p>intro placeholder</p>
-
+                            <p>A (univariate) dataset correlates the statistical units to the relative variables
+                                involved in the analysis. To product a (univariate) statistical distribution from the
+                                previous dataset we have to:
+                            <ul>
+                                <li>Define some assumptions/constraints for the groups (requirements to be in a
+                                    particular group)</li>
+                                <li>Group the units into sets respecting the contraints explained before</li>
+                                <li>Count the relative frequency</li>
+                            </ul>
+                            For example, if we have this dataset:
+                            <table style="font-family: arial, sans-serif; border-collapse: collapse; width: 50%;border: 
+                                1px solid #dddddd;
+                                    text-align: left;
+                                    padding: 8px;
+                                ">
+                                <tr>
+                                    <th style="background-color: #eeeeee;">Person</th>
+                                    <th style="background-color: #eeeeee;">Age</th>
+                                </tr>
+                                <tr>
+                                    <td>Edoardo</td>
+                                    <td>23</td>
+                                </tr>
+                                <tr>
+                                    <td>Francesca</td>
+                                    <td>45</td>
+                                </tr>
+                                <tr>
+                                    <td>Manuele</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Chiara</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>Mario</td>
+                                    <td>56</td>
+                                </tr>
+                                <tr>
+                                    <td>Francesco</td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>Cristian</td>
+                                    <td>33</td>
+                                </tr>
+                                <tr>
+                                    <td>Zaira</td>
+                                    <td>77</td>
+                                </tr>
+                                <tr>
+                                    <td>Marco</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>Gianna</td>
+                                    <td>19</td>
+                                </tr>
+                            </table>
+                            We have to, first of all, define the groups and the constraints of the groups: In this case
+                            I would like to define 4 groups, 0-25, 25-50, 50,-75 and 75-100 (with the extreme right
+                            value excluded).
+                            So, the distribution will be:
+                            <img src="distribution.png" alt="distribution">
+                            I can't go back from the distribution to the dataset, here I lose the association between
+                            units and values (as you can see I can only point out some characteristics of the data
+                            involved, like 5 people have from 0 to 24 (included) years old, but I can't know how many
+                            years old is Edoardo for example).
+                            In this case (but also in general of course) I have a <b>loss of information</b>, but I
+                            <b>gain knowledge</b>. There is another important fact: I respect the privacy of people
+                            involved in this analysis (still, I can't know how many years old is Edoardo) and of course
+                            I care about it.
+                            </p>
                             <br>
 
                             <h4>Applications / Practice (A)</h4>
@@ -324,10 +396,14 @@
                                     contains
                                     a pointer to another memory location that holds the real data. Reference Type
                                     variables
-                                    are stored in the heap while Value Type variables are stored in the stack" [2].</i>
+                                    are stored in the heap while Value Type variables are stored in the stack" <a
+                                        href="#link2">[2]</a>.</i>
                             </div>
                             <img src="reference-type.png" alt="reference and value types">
                             <b>Code Example: Passing Value Type Variables</b>
+                            <br>
+                            Here the value is copied when the method is called so the real value changes only inside the
+                            function.
                             <pre>
 static void ChangeValue(int x)
 {
@@ -352,6 +428,10 @@ static void Main(string[] args)
 100 
 </pre>
                             <b>Code Example: Passing Reference Type Variable </b>
+                            <br>
+                            Here instead the value passed to the method is the address of the variable, so the real
+                            value
+                            changes also outside the funciton.
                             <pre>
 static void ChangeReferenceType(Student std2)
 {
@@ -412,12 +492,12 @@ Steve
 
                             <!--REFERENCES-->
                             <h4>References</h4>
-                            [1]<a
+                            [1]<a id="link1"
                                 href="https://statistics.laerd.com/statistical-guides/descriptive-inferential-statistics.php">
                                 Statistics.laerd.com
                                 - Descriptive and inferential satistics</a>
                             <br>
-                            [2]<a href="http://net-informations.com/faq/general/valuetype-referencetype.htm">
+                            [2]<a id="link2" href="http://net-informations.com/faq/general/valuetype-referencetype.htm">
                                 NET-Informations
                                 -
                                 Difference between a Value Type and a Reference Type </a>
