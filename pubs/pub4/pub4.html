@@ -435,7 +435,7 @@ static void Main(string[] args)
                             <br>
                             Here instead the value passed to the method is the address of the variable, so the real
                             value
-                            changes also outside the funciton.
+                            changes also outside the function.
                             <pre>
 static void ChangeReferenceType(Student std2)
 {
@@ -492,7 +492,47 @@ Steve
                                 you can spot. Which way do you find easier or more comfortable and why ?
 
                             </h5>
-                            <p>intro placeholder <a href="#link7">[7]</a> <a href="#link8">[8]</a></p>
+                            <p>First of all, let's clarify what an event is. An event in programming languages is
+                                something that changes its state in a certain moment (like an input, mouse over an
+                                object, a click, a button pressed etc...). I can handle these events and trigger actions
+                                after these events happens. We can do these in both C# and VB.NET.<br>
+                                In <b>C#</b>, when I would like to catch an event and fire up an action I have to
+                                declare a
+                                list
+                                of actions that will be called simultaneously.
+                                In my first C# program I created a Button for example
+                            <pre>
+this.button1 = new System.Windows.Forms.Button();
+</pre> and then I added an Event Handler:
+                            <pre>
+this.button1.Click += new System.EventHandler(this.button1_Click);</pre>
+                            Let's analyze this. I created a list of actions (in this case containing only one action) to
+                            perform when the button is
+                            clicked. I added to this list an event handler that will handle the event and when this will
+                            happens the function will
+                            be called <a href="#link7">[7]</a>. <br>
+                            Instead with <b>VB.NET</b> I did the same thing but in a different way. I created a button
+                            object
+                            <pre>
+Me.Button1 = New System.Windows.Forms.Button()
+</pre>
+                            but I don't have to create a list of actions, instead I have to declare which event the
+                            function will handle directly with the function definition. Like in this case: <br>
+                            <pre>
+Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    RichTextBox1.Text = "Hello, World!"
+End Sub</pre>
+                            In this way I'm saying the same thing as before, so when the button is clicked (Handles
+                            Button1.Click) executes this function.<a href="#link8">[8]</a>
+                            <br>
+                            I don't actually see too many differences, but there are a few small details that changed my
+                            opinion and led me to like the C# way more.
+                            In this particular topic (event handling) I find VB.NET way easier and more readable because
+                            I have on the same line the function definition and the event handled.
+                            <b>But</b> VB.NET comes from languages as Visual Basic, while C# takes inspiration from
+                            C-like
+                            languages and for instance Java deeply. Since I learned Java in my Bachelor Degree course I
+                            feel myself more comfortable when coding with C#.</p>
                             <h5>
                                 <b>2_RA)</b> Note that any C# will have a Program.cs file in its solution folder while
                                 VB.NET
@@ -503,7 +543,11 @@ Steve
                                 and
                                 VB.NET program are started.
                             </h5>
-                            <p>intro placeholder</p>
+                            <p><b>Program.cs</b> contains the Main function of the application, so it's a function
+                                called when the program starts. In my first C# program the Main function just creates a
+                                new Form1 object.
+                                <br>
+                                Instead, <b>Application.Designer.vb</b> is a file </p>
 
                             <br>
 
@@ -536,8 +580,9 @@ Steve
                                 Microsoft Support - How
                                 to provide file drag and drop functionality in a Visual C application</a>
                             <br>
-                            [7]<a id="link7" href="https://docs.microsoft.com/it-it/dotnet/standard/events/">
-                                Microsoft Docs - Handling and raising events (C#)</a>
+                            [7]<a id="link7"
+                                href="https://stackoverflow.com/questions/803242/understanding-events-and-event-handlers-in-c-sharp">
+                                StackOverflow - Understanding events and event handlers in C#</a>
                             <br>
                             [8]<a id="link8"
                                 href="https://docs.microsoft.com/it-it/dotnet/visual-basic/programming-guide/language-features/events/">
