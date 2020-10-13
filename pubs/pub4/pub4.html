@@ -558,13 +558,19 @@ End Sub</pre>
                                 editing the Form with the designer tool. It contains some settings as the default
                                 startup form (in my case Form1), if it has to save settings on exit, if it has to enable
                                 visual styles, which type of application we're running etc... <br>
-
+                                So we don't have a Main actually, but we can add it. By the way, this method in
+                                Application.Designer.vb helps us defining the starting form of our application.
+                            <pre>
+Protected Overrides Sub OnCreateMainForm()
+    Me.MainForm = Global.WindowsApp1.Form1
+End Sub 
+                                </pre>
                             </p>
 
                             <br>
 
                             <!--REFERENCES-->
-                            <h4>References</h4>
+                            <h4><b>References</b></h4>
                             [1]<a id="link1"
                                 href="https://statistics.laerd.com/statistical-guides/descriptive-inferential-statistics.php">
                                 Statistics.Laerd.com
