@@ -161,7 +161,7 @@
                             <h3 class="mb-3 font-weight-bold dark-grey-text">
                                 <strong>[Statistics] Lesson 2</strong>
                             </h3>
-                            Author: Edoardo Ottavianelli<br>17/10/2020<br><br>
+                            Author: Edoardo Ottavianelli<br>18/10/2020<br><br>
                             <h4><b>Researches about theory (R)</b></h4>
                             <h5>
                                 <b>4_R) A characteristic or attribute or property of the units of observation can be
@@ -195,7 +195,7 @@
                                     data and informations is processed to extract useful knowledge from raw
                                     data.</b>
                             </h5>
-                            <p>The <b>OLTP</b>(Online transaction processing) systems facilitate the transactions processes. We can define two meanings of the term transaction:
+                            <p>The <b>Online transaction processing</b> (OLTP) systems facilitate the transactions processes. We can define two meanings of the term transaction <a href="#link2">[2]</a>:
                                 <ul>
                                     <li>
                                         Transaction in Database Management System means the atomic process to apply changes to data.
@@ -214,9 +214,25 @@
                                         Clusters: These are groups of tables in a DBMS and they help the systems to make the JOIN operations faster.
                                     </li>
                                     <li>
-                                        Discrete transactions: This 
+                                        Discrete transactions: This technology make the changes atomic and defers all the changes until the transaction is committed.
+                                        So, it stores changes in a different environment and apply the changes when the transaction is confirmed.
+                                    </li>
+                                    <li>
+                                        Block size: The block size of these systems must be a multiple of the OS where the system is hosted to avoid multiple unnecessary and 
+                                        low-performance input/output actions.
+                                    </li>
+                                    <li>
+                                        Buffer cache size: These types of systems have to maximize the use of caching technology due to high level of concurrent requests.
                                     </li>
                                 </ul>
+                                This type of system is constrasted to <b>Online Analytical Processing</b> (OLAP) because these systems process much more complex queries
+                                but in a smaller volume. OLTP uses all of the CRUD operations (Create, Read, Update and Delete) instead OLAP systems typically uses
+                                read only.
+                                Typical applications of OLAP include business reporting for sales, marketing, management reporting, business process management (BPM),
+                                budgeting and forecasting, financial reporting and similar areas, with new applications emerging, such as agriculture <a href="#link3">[3]</a>.
+                                
+                                <br><br>
+                                <b>Data Warehouse</b> (DW) 
                             </p>
                             <h5>
                                 <b> 6_R) Show how we can obtain an online algo for the arithmetic mean and explain
@@ -283,6 +299,12 @@
                             <h4><b>References</b></h4>
                             [1]<a id="link1" target="_blank" href="https://www.youtube.com/watch?v=eghn__C7JLQ">
                                 Data Science & Statistics: Levels of measurement</a>
+                            <br>
+                            [2]<a id="link2" target="_blank" href="https://en.wikipedia.org/wiki/Online_transaction_processing">
+                                Wikipedia - Online Transaction Processing</a>
+                            <br>
+                            [3]<a id="link2" target="_blank" href="https://en.wikipedia.org/wiki/Online_analytical_processing">
+                                Wikipedia - Online Analytical Processing</a>
                             <br>
                         </div>
                         <!--Grid column-->
