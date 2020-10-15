@@ -230,9 +230,24 @@
                                 read only.
                                 Typical applications of OLAP include business reporting for sales, marketing, management reporting, business process management (BPM),
                                 budgeting and forecasting, financial reporting and similar areas, with new applications emerging, such as agriculture <a href="#link3">[3]</a>.
-                                
-                                <br><br>
+                                There are three main types of OLAP systems:
+                                <ul>
+                                    <li>
+                                        Multidimensional OLAP (MOLAP): MOLAP (multi-dimensional online analytical processing) is the classic form of OLAP and is 
+                                        sometimes referred to as just OLAP. MOLAP stores this data in an optimized multi-dimensional array storage, rather than in a relational database.
+                                    </li>
+                                    <li>
+                                        Relational OLAP (ROLAP): ROLAP works directly with relational databases and does not require pre-computation. The base data 
+                                        and the dimension tables are stored as relational tables and new tables are created to hold the aggregated information.
+                                    </li>
+                                    <li>
+                                        Hybrid OLAP (HOLAP): HOLAP database will use relational tables to hold the larger quantities of detailed data, and use specialized storage for at least some aspects of the smaller quantities of more-aggregate or less-detailed data.
+                                        HOLAP addresses the shortcomings of MOLAP and ROLAP by combining the capabilities of both approaches.
+                                    </li>
+                                </ul>
                                 <b>Data Warehouse</b> (DW) 
+
+                                <div class="container"><img src="DW.jpg"></div>
                             </p>
                             <h5>
                                 <b> 6_R) Show how we can obtain an online algo for the arithmetic mean and explain
@@ -303,7 +318,7 @@
                             [2]<a id="link2" target="_blank" href="https://en.wikipedia.org/wiki/Online_transaction_processing">
                                 Wikipedia - Online Transaction Processing</a>
                             <br>
-                            [3]<a id="link2" target="_blank" href="https://en.wikipedia.org/wiki/Online_analytical_processing">
+                            [3]<a id="link3" target="_blank" href="https://en.wikipedia.org/wiki/Online_analytical_processing">
                                 Wikipedia - Online Analytical Processing</a>
                             <br>
                         </div>
