@@ -341,7 +341,8 @@
                             So, for example, we could have to collect data every n milliseconds (timeseries data, for instance financial/geosismic data)
                             and it's pratically impossible to start this type of algorithm because we never will have a finite set of values.<br>
                             Second, computers have limited resources and it's not so difficult to overload them.
-                            
+                            <a href="https://www.johndcook.com/blog/2008/09/28/theoretical-explanation-for-numerical-results/">
+                                https://www.johndcook.com/blog/2008/09/28/theoretical-explanation-for-numerical-results/</a>
                             </p>
                             <br>
 
@@ -357,7 +358,7 @@
                                 compute the (naif) arithmetic mean and if it can't do that because there are some non-numerical values it
                                 computes a distribution over the population.
                                 <div class="container">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2UDncV-hu4A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                                    <iframe src="https://www.youtube.com/embed/2UDncV-hu4A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                                     gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <!--Call to action-->
@@ -365,6 +366,24 @@
                                     <a class="btn btn-outline-black"
                                         href="https://github.com/edoardottt/Statistics-20-21/tree/main/Lesson-2/WindowsFormsApp"
                                         target="_blank" role="button" title="c sharp # windows form">C# Code
+                                        <i class="fas fa-code ml-2"></i>
+                                    </a>
+                                </div>
+                                <!--/.Call to action-->
+                                <br>
+                                This program instead computes the online arithmetic mean with random values. So, every 1 second it generates a
+                                random number (the grade for an exam, so with the range 18-31, with 31 excluded) and that number will affect the 
+                                current mean. There are two buttons, a "start" button to start the timer and the arithmetic mean computing, and a 
+                                "stop" button to stop the timer and of course also the arithmetic mean computing.  
+                                <div class="container">
+                                   <iframe src="https://www.youtube.com/embed/1hUjhHuAxfA" frameborder="0" allow="accelerometer; autoplay;
+                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <!--Call to action-->
+                                <div class="pt-4">
+                                    <a class="btn btn-outline-black"
+                                        href="https://github.com/edoardottt/Statistics-20-21/tree/main/Lesson-2/OnlineMeanVB"
+                                        target="_blank" role="button" title="c sharp # windows form">VB.NET Code
                                         <i class="fas fa-code ml-2"></i>
                                     </a>
                                 </div>
@@ -396,7 +415,7 @@
 
                             <h4><b>Researches about applications (RA)</b></h4>
                             <h5>
-                                <b>3_RA) Understand how the foating point representation works and describe
+                                <b>3_RA) Understand how the floating point representation works and describe
                                     systematically (possibly using categories) all the possible problems that can
                                     happen. Try to classify the various issues and limitations (representation,
                                     comparison, rounding, propagation, approximation, loss of significance,
