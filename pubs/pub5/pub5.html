@@ -341,8 +341,18 @@
                             So, for example, we could have to collect data every n milliseconds (timeseries data, for instance financial/geosismic data)
                             and it's pratically impossible to start this type of algorithm because we never will have a finite set of values.<br>
                             Second, computers have limited resources and it's not so difficult to overload them.
-                            <a href="https://www.johndcook.com/blog/2008/09/28/theoretical-explanation-for-numerical-results/">
-                                https://www.johndcook.com/blog/2008/09/28/theoretical-explanation-for-numerical-results/</a>
+                            In terms of processing limit, the naive solution isn't different to the others, that's because I have to scan all the 
+                            values and this means the upper-bound of these algorithm it's O(n). Obviously I can make it so worse, but taking the naive
+                            approach as the worst, this is the upper-bound.
+                            Talking about memory, the naive approach is catastrophic. I have to store all the values and then I have to compute them.
+                            This means if I have a lot of numbers, let's say 8 billion (in some topics this is actually a little number) and assuming
+                            every number occupies 8 byte I have to compute 64 GB of data ( :-O ). My computer has only 8 GB of RAM memory,
+                            to compute all these numbers my laptop has to do many unnecessary actions to load data into RAM and then . Instead, with an online (or running as you prefer)
+                            solution I have to use very few variables... (Obviously all of these data aren't completely precise, there are also metadata).
+                            Anyway, if the number of the values isn't really huge (let's suppose 10^10000000 :-) ), the naive approach still works fine, 
+                            even with big computation problems. 
+                            There are also others problems with floating point values and very huge values where the naive approach doesn't work.
+                            These types of problems are discussed in the Researches about application section (<a href="#3_RA">3_RA</a>)
                             </p>
                             <br>
 
@@ -413,7 +423,7 @@
 
                             <br>
 
-                            <h4><b>Researches about applications (RA)</b></h4>
+                            <h4 id="3_RA"><b>Researches about applications (RA)</b></h4>
                             <h5>
                                 <b>3_RA) Understand how the floating point representation works and describe
                                     systematically (possibly using categories) all the possible problems that can
