@@ -513,13 +513,40 @@ return sum
                                 I can assign 20 bits for the integer part and the restant 12 bits for the decimal part.
                                 With this method I can represent numbers going from -524.287 to 524.287 with only 4 digits for the
                                 decimal part, so the smallest number I can represent is 0,00025. This obviously it's very unuseful for
-                                scientific calculus.
+                                scientific calculus.<a href="link9">[9]</a>
                                 <br>
                                 So, engineers thinked about a new representation of floating point numbers in computers that works
                                 in this way: I have a triple of values &lt;s,m,e&gt;: the s is the sign of the number, the m is the mantissa
                                 and the e is the exponent.
                                 This: + 1656 x 10^-2 is a good way to represent the number 16,56.
-
+                                By the way, even if this representation is the real one used in computing now, it still has
+                                problems: let's analyze them.
+                                The problem of <b>scale</b>. Each FP number has an exponent which determines the overall “scale” 
+                                of the number so you can represent either really small values or really larges ones, though 
+                                the number of digits you can devote for that is limited. Adding two numbers of different scale 
+                                will sometimes result in the smaller one being “eaten” since there is no way to fit it into the 
+                                larger scale.<a href="link10">[10]</a>
+                                Conversions to integer are not intuitive: converting (63.0/9.0) to integer yields 7, but 
+                                converting (0.63/0.09) may yield 6. This is because conversions generally truncate rather 
+                                than round. Floor and ceiling functions may produce answers which are off by one from the 
+                                intuitively expected value.
+                                Limited exponent range: results might overflow yielding infinity, or underflow yielding 
+                                a subnormal number or zero. In these cases precision will be lost.
+                                64-bit integers may not fit into a double. Unless you know only 53 bits are used, 
+                                the only suitable floating-point type is the 80-bit extended precision format 
+                                (long double) on x86 processors.
+                                In many if not most cases numerical computations involve iteration rather than just 
+                                the evaluation of a single formula. This can cause errors to accumulate, as the 
+                                chance of an intermediate result not being exactly representable rises. Even if 
+                                the target solution is an attractive fixed point of your iteration formula, numerical 
+                                errors may catapult you out of its domain of attraction.
+                                In addition to the rounding errors introduced at every step in a computation, 
+                                the values your processor computes for transcendental functions may be off by more 
+                                than basic arithmetic. This is because optimal rounding to the nearest representable 
+                                number requires distinguishing on which side of the middle between them (an infinitely 
+                                narrow line) the true result lies. Transcendental functions are power series with 
+                                infinitely many non-zero coefficients, so one cannot really know that for a given 
+                                argument without computing an infinity of terms of the series.<a href="link11">[11]</a>
                             </p>
 
                             <br>
@@ -552,6 +579,12 @@ return sum
                            <br>
                             [9]<a id="link9" target="_blank" href="https://twiki.di.uniroma1.it/twiki/viewfile/Architetture1/AL/WebHome?rev=7;filename=05-razionali.pdf">
                             Progettazione di sistemi digitali - Rappresentazione dei numeri razionali</a>
+                            <br>
+                            [10]<a id="link10" target="_blank" href="https://stackoverflow.com/questions/2100490/floating-point-inaccuracy-examples">
+                            StackOverflow - Floating point inaccuracy examples</a>
+                            <br>
+                            [11]<a id="link10" target="_blank" href="https://www.volkerschatz.com/science/float.html">
+                            What you never wanted to know about floating point but will be forced to find out</a>
                             <br>
                         </div>
                         <!--Grid column-->
