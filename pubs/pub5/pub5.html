@@ -508,8 +508,13 @@ return sum
                                 In general, who don't have knowledge about computer programming and computer architecture
                                 could think as floating point numbers as just numbers with a comma (point, or separator in general).
                                 So if I have to representate 16,56; this number can be stored in a computer like this: 
-                                16,56. So a number representing the entire number, a separator and a number representing the decimal part.
-                                This representation is quite uncomfortable. 
+                                16,56. So a number representing the integer number, a separator and a number representing the decimal part.
+                                This representation is quite uncomfortable. For example, if I have a computer working with 32-bit word,
+                                I can assign 20 bits for the integer part and the restant 12 bits for the decimal part.
+                                With this method I can represent numbers going from -524.287 to 524.287 with only 4 digits for the
+                                decimal part, so the smallest number I can represent is 0,00025. This obviously it's very unuseful for
+                                scientific calculus.
+
                             </p>
 
                             <br>
