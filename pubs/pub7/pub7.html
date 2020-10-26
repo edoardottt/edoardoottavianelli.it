@@ -159,394 +159,101 @@
                         <!--Grid column-->
                         <div class="col-lg-10 col-xl-10 ml-xl-10 mb-10 view overlay rounded z-depth-1">
                             <h3 class="mb-3 font-weight-bold dark-grey-text">
-                                <strong>[Statistics] Lesson 2</strong>
+                                <strong>[Statistics] Lesson 3</strong>
                             </h3>
-                            Author: Edoardo Ottavianelli<br>18/10/2020<br><br>
+                            Author: Edoardo Ottavianelli<br>26/10/2020<br><br>
                             <h4><b>Researches about theory (R)</b></h4>
                             <h5>
-                                <b>4_R) A characteristic or attribute or property of the units of observation can be
-                                    measured and operationalized on different "levels", on a given unit of observation,
-                                    giving rise to possible different operative variables. Find out about the proposed
-                                    classifications of variables and express your opinion about their respective
-                                    usefulness.</b>
-                            </h5>
-                            <p>We know when we have to deal with entities we can describe a lot of characteristics of them. For example, when I describe a girl I can speak about her eyes (brown or green, little or big..), her body (tall, skinny, 165cm, 5.1
-                                inches...) or her behaviour. All of these properties can be classified into categories. The best-known classification was published by the Psychologist Stanley Smith Stevens. I drop here a chart taken from a video on Youtube
-                                <a href="#link1">[1]</a> that explains in a very clear way this categorization.
-                                <div class="container"> <img src="levels.png" alt="levels"> </div><br> We can measure data distingushing from the <b>quantitative</b> data and <b>qualitative</b> data. The first refer only to numeric data (so something that I can quantify), the
-                                second instead refer to the data I can describe with words/adjectives or numbers (but they don't have to be a measure of anything). But, be careful, I can describe the same entity using both types of variables, for example
-                                as we saw before, I can describe the body of a girl as tall (using a scale of short, medium and tall; so qualitative data) or saying she's 165 centimeters (using quantitative data).
-                                <br> Let's focus on Qualitative data. They can be split into another two categories:
-                                <b>Nominal</b> and
-                                <b>Ordinal</b>. Both use words to describe some data; an example of nominal measurement is using the seasons name: so winter, fall, spring and summer, so for instance I can group the days of the year classifying them with
-                                the season they are in. The ordinal measurement differs from the nominal because I can sort the informations and I have a kind of range of measurement. So for example I can classify some dishes in a restaurant using a scale
-                                of
-                                <i>disgusting, acceptable, good, delicious</i>. Of course we can see here a scale, a range, a lower grade and upper grade.<br> Instead talking about Quantitative measurement, there is a little difference between them. Both
-                                use numeric values to describe a property, but <b>Interval</b> doesn't have necessarily the Zero value as the lower value. A good example for the nominal level is the temperature measured in C or F. The zero is just a value
-                                and it isn't the lower bound. Instead the temperature measured in K has a true Zero value (so is the actual lower bound) and it is a <b>ratio</b> level of measurement.
-                                A Nominal level of measurement classifies the objects/entities into some groups or sets to which they belong. 
-                                We can't do any comparison on these types of data except for the classification/membership.
-                                Color, shape and other qualitative adjectives of the object are part of this category.
-                                Mathematical Operators: “ = ” , “ ≠ ”.
-
-                                An Ordinal level of measurement defines an order relation (1st, 2nd 3rd) between the objects. 
-                                So for example we can refer at this type as the height/weight of the students of Statistics Course.
-                                We can order the students per height/weight order and do comparisons between the students looking at these informations.
-                                I'm 180 cm and I'm shorter than a 190 cm student. 
-                                Mathematical operator: “ > “ , “ < “.
-
-                                The Interval level of measurement defines a scale where information can be placed. So, for example with a 
-                                meterstick we have a low-bound and an high-bound level and some points into this scale where all the data
-                                fall in.
-                                Mathematical operator: “ + “, “ – “.
-
-                                A ratio scale possesses a 
-                                meaningful (unique and non-arbitrary) zero value. Examples include mass, length, duration, plane angle, 
-                                energy and electric charge. In contrast to interval level of measurement, 
-                                ratios are now meaningful because having a non-arbitrary zero point makes it meaningful to say, for example, 
-                                that one object has “twice the length”. 
-                                Mathematical operator: “ * “,“ / “. <a href="#link2">[2]</a>
-                            </p>
-                            <h5>
-                                <b>5_R) Describe the most common configuration of data repository in the real world
-                                    and
-                                    corporate environment. Concepts such as Operation systems (oltp), Data Warehouse
-                                    (DW), Data Marts, Analitical and statistical systems (olap), etc. Try to draw a
-                                    conceptual picture of how all these elements works together and how the flow of
-                                    data and informations is processed to extract useful knowledge from raw
-                                    data.</b>
-                            </h5>
-                            <p>The <b>Online transaction processing</b> (OLTP) systems facilitate the transactions processes. We can define two meanings of the term transaction <a href="#link3">[3]</a>:
-                                <ul>
-                                    <li>
-                                        Transaction in Database Management System means the atomic process to apply changes to data.
-                                    </li>
-                                    <li>
-                                        Transaction in Financial world means the actual process to move money from a source to a target.
-                                    </li>
-                                </ul>
-                                This type of systems are specifically advanced to process insert and update processes. One example of these is the ATM where you can send/receive money. Obviously the requisites for these systems are availability, speed and high concurrency performance.
-                                The OLTP system design requires:
-                                <ul>
-                                    <li>Rollback segments: These are the portions of DBMS who record the actions of transactions and provide the ability to go back and
-                                    restore the system to its previous state.
-                                    </li>
-                                    <li>
-                                        Clusters: These are groups of tables in a DBMS and they help the systems to make the JOIN operations faster.
-                                    </li>
-                                    <li>
-                                        Discrete transactions: This technology make the changes atomic and defers all the changes until the transaction is committed.
-                                        So, it stores changes in a different environment and apply the changes when the transaction is confirmed.
-                                    </li>
-                                    <li>
-                                        Block size: The block size of these systems must be a multiple of the OS where the system is hosted to avoid multiple unnecessary and 
-                                        low-performance input/output actions.
-                                    </li>
-                                    <li>
-                                        Buffer cache size: These types of systems have to maximize the use of caching technology due to high level of concurrent requests.
-                                    </li>
-                                </ul>
-                                This type of system is constrasted to <b>Online Analytical Processing</b> (OLAP) because these systems process much more complex queries
-                                but in a smaller volume. OLTP uses all of the CRUD operations (Create, Read, Update and Delete) instead OLAP systems typically uses
-                                read only.
-                                Typical applications of OLAP include business reporting for sales, marketing, management reporting, business process management (BPM),
-                                budgeting and forecasting, financial reporting and similar areas, with new applications emerging, such as agriculture <a href="#link4">[4]</a>.
-                                There are three main types of OLAP systems:
-                                <ul>
-                                    <li>
-                                        Multidimensional OLAP (MOLAP): MOLAP (multi-dimensional online analytical processing) is the classic form of OLAP and is 
-                                        sometimes referred to as just OLAP. MOLAP stores this data in an optimized multi-dimensional array storage, rather than in a relational database.
-                                    </li>
-                                    <li>
-                                        Relational OLAP (ROLAP): ROLAP works directly with relational databases and does not require pre-computation. The base data 
-                                        and the dimension tables are stored as relational tables and new tables are created to hold the aggregated information.
-                                    </li>
-                                    <li>
-                                        Hybrid OLAP (HOLAP): HOLAP database will use relational tables to hold the larger quantities of detailed data,
-                                        and use specialized storage for at least some aspects of the smaller quantities of more-aggregate or less-detailed data.
-                                        HOLAP addresses the shortcomings of MOLAP and ROLAP by combining the capabilities of both approaches.
-                                    </li>
-                                </ul>
-                                A <b>Data Warehouse</b> (DW) is a centralized repository of data that can be analyzed to make
-                                more informed decisions. DBMS and other systems send informations to data warehouses usually on a regular basis.
-                                Business analysts, data engineers, data scientists access data to take decisions and study the flow of the information.
-
-                                The data and the related analysis have become critical factors to ensure the competitiveness of corporates.
-                                Reports, dashboards and analytics tools are indispensable for extracting insights from data, monitoring
-                                business performance and supporting decision making.
-                                <div class="container"><img src="DW.jpg"></div>
-                                Benefits of DW (taken from Wikipedia <a href="#link5">[5]</a>):
-                                A data warehouse maintains a copy of information from the source transaction systems. This architectural complexity provides the opportunity to:
-                                <ul>
-                                    <li>Integrate data from multiple sources into a single database and data model. More congregation of data to single database so a single query engine can be used to present data in an ODS.</li>
-                                    <li>Mitigate the problem of database isolation level lock contention in transaction processing systems caused by attempts to run large, long-running analysis queries in transaction processing databases.</li>
-                                    <li>Maintain data history, even if the source transaction systems do not.</li>
-                                    <li>Integrate data from multiple source systems, enabling a central view across the enterprise. This benefit is always valuable, but particularly so when the organization has grown by merger.</li>
-                                    <li>Improve data quality, by providing consistent codes and descriptions, flagging or even fixing bad data.</li>
-                                    <li>Make decision–support queries easier to write.</li>
-                                    <li>Organize and disambiguate repetitive data.</li>
-                                </ul>
-                                Other important well-deserved mentions are <b>Data marts</b>, which are repositories containing well-ordered and classified
-                                data for a specific topic, as we can see from the previous image (purchasing, sales, inventory).
-                            </p>
-                            <h5>
-                                <b> 6_R) Show how we can obtain an online algo for the arithmetic mean and explain
-                                    the
-                                    various possible reasons why it is preferable to the "naive" algo based on the
-                                    definition.
+                                <b>7_R) Explain what are marginal, joint and conditional distributions and how we can
+                                    explain the Bayes theorem using relative frequencies.
                                 </b>
                             </h5>
                             <p>
-                                What is the arithmetic mean?<br>
-                                In mathematics and statistics, the arithmetic mean, or simply the mean or the average (when the context is clear),
-                                is the sum of a collection of numbers divided by the count of numbers in the collection.
-                                The collection is often a set of results of an experiment or an observational study,
-                                or frequently a set of results from a survey.<a href="#link6">[6]</a><br>
-                                The naive algorithm, so the first coming in mind is ,obviously, to sum all the values and then divide by the number of the items.
-                                <br>
-                                So, for instance, if I have this dataset:
-                                <table style="font-family: arial, sans-serif; border-collapse: collapse; width: 50%;border: 
-                                1px solid #dddddd;
-                                    text-align: left;
-                                    padding: 8px;
-                                ">
-                                <tr>
-                                    <th style="background-color: #eeeeee;">Person</th>
-                                    <th style="background-color: #eeeeee;">Age</th>
-                                </tr>
-                                <tr>
-                                    <td>Edoardo</td>
-                                    <td>23</td>
-                                </tr>
-                                <tr>
-                                    <td>Francesca</td>
-                                    <td>45</td>
-                                </tr>
-                                <tr>
-                                    <td>Manuele</td>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <td>Chiara</td>
-                                    <td>22</td>
-                                </tr>
-                                <tr>
-                                    <td>Mario</td>
-                                    <td>56</td>
-                                </tr>
-                                <tr>
-                                    <td>Francesco</td>
-                                    <td>98</td>
-                                </tr>
-                                <tr>
-                                    <td>Cristian</td>
-                                    <td>33</td>
-                                </tr>
-                                <tr>
-                                    <td>Zaira</td>
-                                    <td>77</td>
-                                </tr>
-                                <tr>
-                                    <td>Marco</td>
-                                    <td>16</td>
-                                </tr>
-                                <tr>
-                                    <td>Gianna</td>
-                                    <td>19</td>
-                                </tr>
-                            </table>
-                            To calculate the arithmetic mean, I have to sum all the ages and then divide by 10.
-                            So: 390/10 = 39. We know now the arithmetic mean of this set of values is 39.<br>
-                            We calculated this number without difficulty, but can we have some obstacles in some weird circumstances?<br>
-                            <b>Yes</b>. First of all, as we have seen in the previous section, we could have an infinite set of values.
-                            So, for example, we could have to collect data every n milliseconds (timeseries data, for instance financial/geosismic data)
-                            and it's pratically impossible to start this type of algorithm because we never will have a finite set of values.<br>
-                            There are also others problems with floating point values and very huge values where the naive approach doesn't work.
-                            These types of problems are discussed in the Researches about application section (<a href="#3_RA">3_RA</a>).
-                            By the way, a better solution to calculate the arithmetic mean is using the Knuth formula:
-                            <img src="knuth.gif" alt="knuth formula">
-                            or the Kahan algorithm:
-                            <pre>
-function KahanSum(input)
-var sum = 0.0                    // Prepare the accumulator.
-var c = 0.0                      // A running compensation for lost low-order bits.
-for i = 1 to input.length do     // The array input has elements indexed input[1] to input[input.length].
-    var y = input[i] - c         // c is zero the first time around.
-    var t = sum + y              // Alas, sum is big, y small, so low-order digits of y are lost.
-    c = (t - sum) - y            // (t - sum) cancels the high-order part of y; subtracting y recovers negative (low part of y)
-    sum = t                      // Algebraically, c should always be zero. Beware overly-aggressive optimizing compilers!
-next i                           // Next time around, the lost low part will be added to y in a fresh attempt.
-return sum
-                            </pre>
+                            </p>
+                            <h5>
+                                <b>8_R) Explain the concept of statistical independence and why, in case of independence, 
+                                    the relative joint frequencies are equal to the products of the corresponding marginal 
+                                    frequencies..s.</b>
+                            </h5>
+                            <p>
+
+                            </p>
+                            <h5>
+                                <b>9_R) Do a review about charts useful for statistics and data presentation. 
+                                    What is the chart type that impressed you most and why?
+                                </b>
+                            </h5>
+                            <p>
+                                
                             </p>
                             <br>
 
                             <h4><b>Applications / Practice (A)</b></h4>
                             <h5>
-                                <b>4_A) Create - in both languages C# and VB.NET - a demonstrative program which
-                                    computes the online arithmetic mean (if it's a numeric variable) and the
-                                    distribution for a discrete variable (can use values simulated with RANDOM
-                                    object).
+                                <b>7_A) Create - in your preferred language C# or VB.NET - a program which is able to read 
+                                    ANY file CSV (or at least 99% of them), assuming no prior knowledge about its structure 
+                                    (do not even assume to that a first line with variable names is necessarily present in 
+                                    the CSV: when not present, clearly, do some useful automatic naming). The program should 
+                                    use your intelligence, creativity and data checking functions (see references below) to 
+                                    achieve this task. The GUI should display the variables in a control, such as for instance 
+                                    a Treeview (or anything you deem useful)
+                                     and let the user select the data type for each field in the CSV files. Also, some data 
+                                     preprocessing should be carried out on the data (or a suitable subset) in order to empirically 
+                                     establish the most suitable type of data of each field and, thus, give a preliminary tentative 
+                                     choice of data types for the variable fields to the program user (which he/she can, then, try to 
+                                     change on the GUI at his will before attempting to read the file).
+                                      Test the program with several CSV files downloaded from the Internet from various languages 
+                                      (ita, es/us, cn, ...)
+                                       to make that values are parsed as intended. (For specific date field, the GUI could also let 
+                                       the user specify a custom format in a textbox to read it correctly).
                                 </b>
                             </h5>
-                            <p> This program is just to enhance my skills on C# and the whole Windows development environment. It tries to
-                                compute the (naif) arithmetic mean and if it can't do that because there are some non-numerical values it
-                                computes a distribution over the population.
-                                <div class="container">
-                                    <iframe src="https://www.youtube.com/embed/2UDncV-hu4A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                                    gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <!--Call to action-->
-                                <div class="pt-4">
-                                    <a class="btn btn-outline-black"
-                                        href="https://github.com/edoardottt/Statistics-20-21/tree/main/Lesson-2/WindowsFormsApp"
-                                        target="_blank" role="button" title="c sharp # windows form">C# Code
-                                        <i class="fas fa-code ml-2"></i>
-                                    </a>
-                                </div>
-                                <!--/.Call to action-->
-                                <br>
-                                This program instead computes the online arithmetic mean with random values. So, every 1 second it generates a
-                                random number (the grade for an exam, so with the range 18-31, with 31 excluded) and that number will affect the 
-                                current mean. There are two buttons, a "start" button to start the timer and the arithmetic mean computing, and a 
-                                "stop" button to stop the timer and of course also the arithmetic mean computing.  
-                                <div class="container">
-                                   <iframe src="https://www.youtube.com/embed/1hUjhHuAxfA" frameborder="0" allow="accelerometer; autoplay;
-                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <!--Call to action-->
-                                <div class="pt-4">
-                                    <a class="btn btn-outline-black"
-                                        href="https://github.com/edoardottt/Statistics-20-21/tree/main/Lesson-2/OnlineMeanVB"
-                                        target="_blank" role="button" title="c sharp # windows form">VB.NET Code
-                                        <i class="fas fa-code ml-2"></i>
-                                    </a>
-                                    <a class="btn btn-outline-black"
-                                        href="https://github.com/edoardottt/Statistics-20-21/tree/main/Lesson-2/OnlineMeanCSharp"
-                                        target="_blank" role="button" title="c sharp # windows form">C# Code
-                                        <i class="fas fa-code ml-2"></i>
-                                    </a>
-                                </div>
-                                <!--/.Call to action-->
-                                <br>
-                                This program instead computes the distribution with random values. So, every 0.1 second it generates a
-                                random number (the grade for an exam, so with the range 18-31, with 31 excluded) and that number will affect the 
-                                current distribution. There are two buttons, a "start" button to start the timer and the distribution computing, and a 
-                                "stop" button to stop the timer and of course also the distribution computing.
-                                <div class="container">
-                                <iframe  src="https://www.youtube.com/embed/HnN-qvnL-TA" frameborder="0" allow="accelerometer; autoplay; 
-                                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <!--Call to action-->
-                                <div class="pt-4">
-                                    <a class="btn btn-outline-black"
-                                        href="https://github.com/edoardottt/Statistics-20-21/tree/main/Lesson-2/DistributionVB"
-                                        target="_blank" role="button" title="c sharp # windows form">VB.NET Code
-                                        <i class="fas fa-code ml-2"></i>
-                                    </a>
-                                    <a class="btn btn-outline-black"
-                                        href="https://github.com/edoardottt/Statistics-20-21/tree/main/Lesson-2/DistributionCSharp"
-                                        target="_blank" role="button" title="c sharp # windows form">C# Code
-                                        <i class="fas fa-code ml-2"></i>
-                                    </a>
-                                </div>
-                                <!--/.Call to action-->
+                            <p>
+
                             </p>
                             <h5>
-                                <b>5_A) Create - in your preferred language C# or VB.NET - a demonstrative program which
-                                    computes the online arithmetic mean (or "running mean") and distribution for a
-                                    continuous variable (can use random simulated values).
-
-                                    (In both cases, create your own algorithm, by either inventing it from scratch
-                                    based
-                                    on your own ideas, or putting it together by researching everywhere, striving
-                                    for
-                                    the most usable and general logic and good efficiency and numerical
-                                    stability).</b>
+                                <b>OPT 8_A) In the previous program 7_A, as a verification, plug the code you have 
+                                    already developed for computing the mean and the (univariate) statistical distribution, 
+                                    and allow the user to select any variable and compute the arithmetic mean 
+                                    (only when it makes sense) and the distribution. [Make this general enough, 
+                                    in anticipation of next homework program, where we will also add bivariate distributions 
+                                    and, in general, multivariate distributions, with various charts.]
+                                </b>
                             </h5>
                             <p>
-                                <div class="container">
-                                    <iframe src="https://www.youtube.com/embed/-7dcAy8mtJU" frameborder="0" allow="accelerometer;
-                                     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <div class="pt-4">
-                                    <a class="btn btn-outline-black"
-                                        href="https://github.com/edoardottt/Statistics-20-21/tree/main/Lesson-2/DistributionVB"
-                                        target="_blank" role="button" title="c sharp # windows form">VB.NET Code
-                                        <i class="fas fa-code ml-2"></i>
-                                    </a>
-                                </div>
+                               
                             </p>
-                            <h5>
-                                <b>6_A) Create one or more simple sequences of numbers which clearly show the
-                                    problem
-                                    with the "naive" definition formula of the arithmetic mean, and explore possible
-                                    ways to fix that.
-                                    Provide alternative algorithms to minimize problems with the floating point
-                                    representation with simple demos with actual numbers.</b></h5>
-                            <p><div class="pt-4">
-                                <a class="btn btn-outline-black"
-                                    href="https://github.com/edoardottt/Statistics-20-21/tree/main/Lesson-2/AverageProblems"
-                                    target="_blank" role="button" title="c sharp # windows form">VB.NET Code
-                                    <i class="fas fa-code ml-2"></i>
-                                </a>
-                            </div></p>
 
                             <br>
 
-                            <h4 id="3_RA"><b>Researches about applications (RA)</b></h4>
+                            <h4><b>Researches about applications (RA)</b></h4>
                             <h5>
-                                <b>3_RA) Understand how the floating point representation works and describe
-                                    systematically (possibly using categories) all the possible problems that can
-                                    happen. Try to classify the various issues and limitations (representation,
-                                    comparison, rounding, propagation, approximation, loss of significance,
-                                    cancellation, etc.) and provide simple examples for each of the categories you
-                                    have
-                                    identified.</b>
+                                <b>4_R) Find on the Internet and document all possible ways you can infer a suitable 
+                                    data type, useful for statistical processing, when you are getting data points 
+                                    as a flow of alphanumeric strings (Be aware of possible format difference due to language).
+                                </b>
                             </h5>
                             <p>
-                                In general, who don't have knowledge about computer programming and computer architecture
-                                could think as floating point numbers as just numbers with a comma (point, or separator in general).
-                                So if I have to representate 16,56; this number can be stored in a computer like this: 
-                                16,56. So a number representing the integer number, a separator and a number representing the decimal part.
-                                This representation is quite uncomfortable. For example, if I have a computer working with 32-bit word,
-                                I can assign 20 bits for the integer part and the restant 12 bits for the decimal part.
-                                With this method I can represent numbers going from -524.287 to 524.287 with only 4 digits for the
-                                decimal part, so the smallest number I can represent is 0,00025. This obviously it's very unuseful for
-                                scientific calculus.<a href="link9">[9]</a>
-                                <br>
-                                So, engineers thinked about a new representation of floating point numbers in computers that works
-                                in this way: I have a triple of values &lt;s,m,e&gt;: the s is the sign of the number, the m is the mantissa
-                                and the e is the exponent.
-                                This: + 1656 x 10^-2 is a good way to represent the number 16,56.
-                                By the way, even if this representation is the real one used in computing now, it still has
-                                problems: let's analyze them.
-                                The problem of <b>scale</b>. Each FP number has an exponent which determines the overall “scale” 
-                                of the number so you can represent either really small values or really larges ones, though 
-                                the number of digits you can devote for that is limited. Adding two numbers of different scale 
-                                will sometimes result in the smaller one being “eaten” since there is no way to fit it into the 
-                                larger scale.<a href="link10">[10]</a>
-                                Conversions to integer are not intuitive: converting (63.0/9.0) to integer yields 7, but 
-                                converting (0.63/0.09) may yield 6. This is because conversions generally truncate rather 
-                                than round. Floor and ceiling functions may produce answers which are off by one from the 
-                                intuitively expected value.
-                                Limited exponent range: results might overflow yielding infinity, or underflow yielding 
-                                a subnormal number or zero. In these cases precision will be lost.
-                                64-bit integers may not fit into a double. Unless you know only 53 bits are used, 
-                                the only suitable floating-point type is the 80-bit extended precision format 
-                                (long double) on x86 processors.
-                                In many if not most cases numerical computations involve iteration rather than just 
-                                the evaluation of a single formula. This can cause errors to accumulate, as the 
-                                chance of an intermediate result not being exactly representable rises. Even if 
-                                the target solution is an attractive fixed point of your iteration formula, numerical 
-                                errors may catapult you out of its domain of attraction.
-                                In addition to the rounding errors introduced at every step in a computation, 
-                                the values your processor computes for transcendental functions may be off by more 
-                                than basic arithmetic. This is because optimal rounding to the nearest representable 
-                                number requires distinguishing on which side of the middle between them (an infinitely 
-                                narrow line) the true result lies. Transcendental functions are power series with 
-                                infinitely many non-zero coefficients, so one cannot really know that for a given 
-                                argument without computing an infinity of terms of the series.<a href="link11">[11]</a>
+                                
+                            </p>
+
+                            <br>
+                            <h5>
+                                <b>5_RA) Do a research about Reflection and the type 'Type' and make all examples that you 
+                                    deem to be useful.
+                                </b>
+                            </h5>
+                            <p>
+                                
+                            </p>
+
+                            <br>
+                            <h5>
+                                <b>6_RA) Do a comprehensive research about the GRAPHICS (GDI+ library) object and all its members.
+                                </b>
+                            </h5>
+                            <p>
+                                
                             </p>
 
                             <br>
@@ -555,36 +262,6 @@ return sum
                             <h4><b>References</b></h4>
                             [1]<a id="link1" target="_blank" href="https://www.youtube.com/watch?v=eghn__C7JLQ">
                                 Data Science & Statistics: Levels of measurement</a>
-                            <br>
-                            [2]<a id="link2" target="_blank" href="https://en.wikipedia.org/wiki/Level_of_measurement">
-                                Wikipedia - Level of measurement</a>
-                            <br>
-                            [3]<a id="link3" target="_blank" href="https://en.wikipedia.org/wiki/Online_transaction_processing">
-                                Wikipedia - Online Transaction Processing</a>
-                            <br>
-                            [4]<a id="link4" target="_blank" href="https://en.wikipedia.org/wiki/Online_analytical_processing">
-                                Wikipedia - Online Analytical Processing</a>
-                            <br>
-                            [5]<a id="link5" target="_blank" href="https://en.wikipedia.org/wiki/Data_warehouse">
-                                Wikipedia - Data Warehouse</a>
-                            <br>
-                            [6]<a id="link6" target="_blank" href="https://en.wikipedia.org/wiki/Arithmetic_mean">
-                                Wikipedia - Arithmetic mean</a>
-                            <br>
-                            [7]<a id="link7" target="_blank" href="https://statisticsforcs.wordpress.com/2017/10/24/best-algorithms-to-compute-the-online-data-stream-arithmetic-mean/">
-                                 Best algorithms to compute the “online data stream” arithmetic mean</a>
-                            <br>
-                            [8]<a id="link8" target="_blank" href="https://en.wikipedia.org/wiki/Floating-point_arithmetic">
-                                Wikipedia - Floating point arithmetic</a>
-                           <br>
-                            [9]<a id="link9" target="_blank" href="https://twiki.di.uniroma1.it/twiki/viewfile/Architetture1/AL/WebHome?rev=7;filename=05-razionali.pdf">
-                            Progettazione di sistemi digitali - Rappresentazione dei numeri razionali</a>
-                            <br>
-                            [10]<a id="link10" target="_blank" href="https://stackoverflow.com/questions/2100490/floating-point-inaccuracy-examples">
-                            StackOverflow - Floating point inaccuracy examples</a>
-                            <br>
-                            [11]<a id="link10" target="_blank" href="https://www.volkerschatz.com/science/float.html">
-                            What you never wanted to know about floating point but will be forced to find out</a>
                             <br>
                         </div>
                         <!--Grid column-->
