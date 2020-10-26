@@ -220,12 +220,14 @@
                                     </tr>
                                     </tbody>
                                     </table>
+                                    <br>
                                     So, in the first row we have some labels that are saying us: on the first column you have the whole
                                     population divided by sets of age values, instead on the first row you have the division by the sex.
                                     In the central values (so all the other cells ) we have the i,j value; so the value involving the i-th
-                                    row and the j-th row. For example we can read that the 24-26 years old males are 77, and so on...                                  
+                                    row and the j-th row. For example we can read that the 24-26 years old males are 77, and so on...
+                                    <br>                               
                                     <style>
-                                        table { width: 100%; background-color: #9EFFF4; color: #000000; border-color:#000000; border-collapse: collapse; }
+                                        table { width: 80%; background-color: #9EFFF4; color: #000000; border-color:#000000; border-collapse: collapse; }
                                         th, td { width: 25%; }
                                         </style>
                                         <table border="2" cellspacing="3" cellpadding="3" align="center">
@@ -234,7 +236,7 @@
                                         <th>A\S</th>
                                         <th>M</th>
                                         <th>F</th>
-                                        <th>d(X)</th>
+                                        <th>d(A)</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -269,18 +271,27 @@
                                         <td>20</td>
                                         </tr>
                                         <tr>
-                                        <td><b>d(Y)</b></td>
+                                        <td><b>d(S)</b></td>
                                         <td>185</td>
                                         <td>115</td>
                                         <td>300</td>
                                         </tr>
                                         </tbody>
                                         </table>
+                                        <br>
+                                        Now instead I added a column and a row, specifically the last column and the last row. If you make some
+                                        little calculations you can see the cells of the last column contain the sum of the previous two values.
+                                        Instead, the cells on the last row contain the sum of the previous integer numbers. So, we can see
+                                        the last column and the last row contain respectively the univariate distribution of the age variable,
+                                        instead the last row contains the univariate distribution of the sex. Obviously the last cell of the last row
+                                        (300) it's the total number of the items inside the population.
+                                        This graphical view of a bivariate distribution is called contingency table.
+
                             </p>
                             <h5>
                                 <b>8_R) Explain the concept of statistical independence and why, in case of independence, 
                                     the relative joint frequencies are equal to the products of the corresponding marginal 
-                                    frequencies..s.</b>
+                                    frequencies.</b>
                             </h5>
                             <p>
 
@@ -304,15 +315,15 @@
                                     use your intelligence, creativity and data checking functions (see references below) to 
                                     achieve this task. The GUI should display the variables in a control, such as for instance 
                                     a Treeview (or anything you deem useful)
-                                     and let the user select the data type for each field in the CSV files. Also, some data 
-                                     preprocessing should be carried out on the data (or a suitable subset) in order to empirically 
-                                     establish the most suitable type of data of each field and, thus, give a preliminary tentative 
-                                     choice of data types for the variable fields to the program user (which he/she can, then, try to 
-                                     change on the GUI at his will before attempting to read the file).
-                                      Test the program with several CSV files downloaded from the Internet from various languages 
-                                      (ita, es/us, cn, ...)
-                                       to make that values are parsed as intended. (For specific date field, the GUI could also let 
-                                       the user specify a custom format in a textbox to read it correctly).
+                                    and let the user select the data type for each field in the CSV files. Also, some data 
+                                    preprocessing should be carried out on the data (or a suitable subset) in order to empirically 
+                                    establish the most suitable type of data of each field and, thus, give a preliminary tentative 
+                                    choice of data types for the variable fields to the program user (which he/she can, then, try to 
+                                    change on the GUI at his will before attempting to read the file).
+                                    Test the program with several CSV files downloaded from the Internet from various languages 
+                                    (ita, es/us, cn, ...)
+                                    to make that values are parsed as intended. (For specific date field, the GUI could also let 
+                                    the user specify a custom format in a textbox to read it correctly).
                                 </b>
                             </h5>
                             <p>
@@ -367,8 +378,11 @@
 
                             <!--REFERENCES-->
                             <h4><b>References</b></h4>
-                            [1]<a id="link1" target="_blank" href="https://www.youtube.com/watch?v=eghn__C7JLQ">
-                                Data Science & Statistics: Levels of measurement</a>
+                            [1]<a id="link1" target="_blank" href="https://en.wikipedia.org/wiki/Marginal_distribution">
+                                Wikipedia - Marginal distribution</a>
+                            <br>
+                            [2]<a id="link2" target="_blank" href="https://en.wikipedia.org/wiki/Joint_probability_distribution">
+                                Wikipedia - Joint distribution</a>
                             <br>
                         </div>
                         <!--Grid column-->
