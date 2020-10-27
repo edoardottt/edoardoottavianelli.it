@@ -292,12 +292,29 @@
                                         Instead, the conditional distribution is composed by all the cells with a specified column. So for example, 
                                         I can consider only the column under the M symbol, so taking into account only the male students. This means 
                                         my population now is considerely more little. So we can refer at it as "conditional" because this distribution
-                                        is conditioned by the fact we take into account only the male students <a href="#link2">[2]</a>.
+                                        is conditioned by the fact we take into account only the male students. I can do the same
+                                        also on the rows, isolating only for instance the row 24-26. Here my population is more little
+                                        and I consider only 113 students, which 77 are male and 36 female.
                                         The last definition is joint distribution. This refer to the value inside a cell having the condition that the 
                                         row is the i-th and the column is the j-th. So for example we know the 0-23 years old male students are 43.
-                                        "Joint" because we join the dat about two variables <a href="#link3">[3]</a>.
+                                        "Joint" because we join the dat about two variables <a href="#link2">[2]</a>.
                                         <br>
-                                    
+                                    Now, let's consider only the conditional distribution conditioned by the fact that we take into account only
+                                    the female students. We can write the relative frequencies dividing all the values in that column by 115, so
+                                    the total of the out conditioned population. So, reading from the top to the bottom we will have: 28/115, 36/115,
+                                    20/115, 19/115 and 12/115. Now I see I can express 36/115 as 36/300 x 300/115. The first parameter is just the 
+                                    joint distribution, so the female students being 24-26 years old. I can rewrite that expression in this way:
+                                    36/115 = (36/300) / (115/300). The second parameter is just the relative frequency of the female univariate
+                                    distribution. This is a very interesting relationship, and obviously I can do the same for the rows and I obtain
+                                    the same relationship (with different values of course).
+                                <br>
+                                Now, let's summarize and make some general assertions. Let n be the population cardinality and n(i,j) the joint distribution
+                                of the i-th row and the j-th column, let n(i) be the population of the i-th row and n(j) the population of the j-th column.
+                                We can say that n(i,j) / n(j) = ( n(i,j) / n ) / ( n(j) / n ). The first object of the second part is the relative 
+                                frequency of the joint distribution n(i,j) and the second object of the second part is the relative frequency of n(j). 
+                                So, the object of the first part is the relative frequency of the i-th row conditioned by the fact we take into account the
+                                population of the j-th column.<br>
+                                This relationship is called the <b>Bayes theorem</b> <a href="#link3">[3]</a>.
                             </p>
                             <h5>
                                 <b>8_R) Explain the concept of statistical independence and why, in case of independence, 
@@ -305,7 +322,12 @@
                                     frequencies.</b>
                             </h5>
                             <p>
-
+                                Independence is a fundamental notion in probability theory, as in statistics and the theory of 
+                                stochastic processes.
+                                Two events are independent, statistically independent, or stochastically independent if the
+                                occurrence of one does not affect the probability of occurrence of the other (equivalently, 
+                                does not affect the odds). Similarly, two random variables are independent if the 
+                                realization of one does not affect the probability distribution of the other. <a href="#link4">[4]</a>.<br>
                             </p>
                             <h5>
                                 <b>9_R) Do a review about charts useful for statistics and data presentation. 
@@ -313,7 +335,36 @@
                                 </b>
                             </h5>
                             <p>
-                                
+                                I know that the "data visualization" studies the differents ways to present/show data, because there are
+                                meaningful ways to show different type of data. For example, with a percentage I would like to use a Pie chart,
+                                bacause it's the most understandable way to see a 100% total divided into some categories.
+                                Let's see some examples of these different charts <a href="#link5">[5]</a>.
+                                <ul>
+                                    <li>Line charts</li>
+                                    <ul>
+                                        <li>When you want to make predictions based on a data history over time.</li>
+                                        <li>When you want to show trends. For example, how house prices have increased over time.</li>
+                                        <li>When comparing two or more different variables, situations, and information over a given period of time.</li>
+                                    </ul>
+                                    <li>Bar charts</li>
+                                    <ul>
+                                        <li>When you want to display data that are grouped into nominal or ordinal categories (see <a href="../pub5/pub5.html">lesson 2</a>)</li>
+                                        <li>To compare data among different categories.</li>
+                                        <li>Bar charts are ideal for visualizing the distribution of data when we have more than three categories.</li>
+                                    </ul>
+                                    <li>Pie charts</li>
+                                    <ul>
+                                        <li>When you want to create and represent the composition of something.</li>
+                                        <li>To show percentage or proportional data.</li>
+                                        <li>When comparing areas of growth within a business such as profit.</li>
+                                    </ul>
+                                    <li>Histograms</li>
+                                    <ul>
+                                        <li>When the data is continuous.</li>
+                                        <li>When you want to represent the shape of the data’s distribution.</li>
+                                        <li>To summarize large data sets graphically.</li>
+                                    </ul>
+                                </ul>
                             </p>
                             <br>
 
@@ -400,6 +451,9 @@
                             <br>
                             [4]<a id="link4" target="_blank" href="https://en.wikipedia.org/wiki/Independence_(probability_theory)">
                                 Wikipedia - Indipendence (probability theory)</a>
+                            <br>
+                            [5]<a id="link4" target="_blank" href="http://www.intellspot.com/types-graphs-charts/">
+                                IntellSpot - Types of Graphs and Charts And Their Uses</a>
                             <br>
                         </div>
                         <!--Grid column-->
