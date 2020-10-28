@@ -471,73 +471,65 @@
                             to parse it as a double.
                             This is the code I wrote in my application to understand what type is the most suitable for an input.  
 <pre>
-    // GUESS THE TYPE OF A VARIABLE
-    public String guessType(ArrayList inputs)
+// GUESS THE TYPE OF A VARIABLE
+public String guessType(ArrayList inputs)
+{
+    String result = "String";
+    String firstValue = (string)inputs[0];
+    // check Date type
+    DateTime dateValue;
+    if (DateTime.TryParse(firstValue, out dateValue))
     {
-        String result = "String";
-        String firstValue = (string)inputs[0];
-
-        // check Date type
-        DateTime dateValue;
-        if (DateTime.TryParse(firstValue, out dateValue))
+        for (int i = 0; i < inputs.Count; i++)
         {
-            for (int i = 0; i < inputs.Count; i++)
+            if ((string)inputs[i] != "" && !DateTime.TryParse((string)inputs[i], out dateValue))
             {
-                if ((string)inputs[i] != "" && !DateTime.TryParse((string)inputs[i], out dateValue))
-                {
-                    break;
-                }
-
+                break;
             }
-            result = "Date";
         }
-
-        // check Int type
-        int intValue;
-        if (int.TryParse(firstValue, out intValue))
-        {
-            for (int i = 0; i < inputs.Count; i++)
-            {
-                if ((string)inputs[i] != "" && !int.TryParse((string)inputs[i], out intValue))
-                {
-                    break;
-                }
-
-            }
-            result = "Int";
-        }
-
-        // check Double type
-        double doubleValue;
-        if (double.TryParse(firstValue, out doubleValue))
-        {
-            for (int i = 0; i < inputs.Count; i++)
-            {
-                if ((string)inputs[i] != "" && !double.TryParse((string)inputs[i], out doubleValue))
-                {
-                    break;
-                }
-
-            }
-            result = "Double";
-        }
-
-        // check Bool type
-        bool boolValue;
-        if (bool.TryParse(firstValue, out boolValue))
-        {
-            for (int i = 0; i < inputs.Count; i++)
-            {
-                if ((string)inputs[i] != "" && !bool.TryParse((string)inputs[i], out boolValue))
-                {
-                    break;
-                }
-
-            }
-            result = "Bool";
-        }
-        return result;
+        result = "Date";
     }
+    // check Int type
+    int intValue;
+    if (int.TryParse(firstValue, out intValue))
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if ((string)inputs[i] != "" && !int.TryParse((string)inputs[i], out intValue))
+            {
+                break;
+            }
+        }
+        result = "Int";
+    }
+    // check Double type
+    double doubleValue;
+    if (double.TryParse(firstValue, out doubleValue))
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if ((string)inputs[i] != "" && !double.TryParse((string)inputs[i], out doubleValue))
+            {
+                break;
+            }
+        }
+        result = "Double";
+    }
+    // check Bool type
+    bool boolValue;
+    if (bool.TryParse(firstValue, out boolValue))
+    {
+        for (int i = 0; i < inputs.Count; i++)
+        {
+            if ((string)inputs[i] != "" && !bool.TryParse((string)inputs[i], out boolValue))
+            {
+                break;
+            }
+        }
+        result = "Bool";
+    }
+    return result;
+}
 </pre>
                                 Here I create a variable of type String (because I know at least is a String) and then
                                 I try to parse this input as Integer, Double, Boolean or Date value.
@@ -557,36 +549,30 @@
                                 It's mandatory to work with Reflection to add System.Reflection namespace in the program.
                                 Let's now dig into some code to put reflection into action. Consider the following class called Customer.
 <pre>
-    public class Customer
-
+public class Customer
+{
+    public int Id
     {
-        public int Id
-        {
-            get; set;
-        }
-
-        public string FirstName
-        {
-            get; set;
-        }
-
-        public string LastName
-        {
-            get; set;
-        }
-
-        public string Address
-        {
-            get; set;
-        }
+        get; set;
     }
+    public string FirstName
+    {
+        get; set;
+    }
+    public string LastName
+    {
+        get; set;
+    }
+    public string Address
+    {
+        get; set;
+    }
+}
 </pre>
 The following code snippet shows how you can get the class name and the namespace name of the Customer class using reflection:
 <pre>
 Type type = typeof(Customer);
-
 Console.WriteLine("Class: " + type.Name);
-
 Console.WriteLine("Namespace: " + type.Namespace);
 </pre>
 The following code snippet illustrates how you can retrieve the list of the properties of the Customer class and display their names in the console window:
