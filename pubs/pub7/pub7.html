@@ -550,7 +550,94 @@
                                 you can use reflection to inspect metadata of the types in your program dynamically 
                                 -- you can retrieve information on the loaded assemblies and the types defined in them.
                                 Reflection in C# is similar to RTTI (Runtime Type Information) of C++<a href="#link6">[6]</a>.
+                                It's mandatory to work with Reflection to add System.Reflection namespace in the program.
+                                Let's now dig into some code to put reflection into action. Consider the following class called Customer.
+<pre>
+    public class Customer
 
+    {
+        public int Id
+        {
+            get; set;
+        }
+
+        public string FirstName
+        {
+            get; set;
+        }
+
+        public string LastName
+        {
+            get; set;
+        }
+
+        public string Address
+        {
+            get; set;
+        }
+    }
+</pre>
+The following code snippet shows how you can get the class name and the namespace name of the Customer class using reflection:
+<pre>
+Type type = typeof(Customer);
+
+Console.WriteLine("Class: " + type.Name);
+
+Console.WriteLine("Namespace: " + type.Namespace);
+</pre>
+The following code snippet illustrates how you can retrieve the list of the properties of the Customer class and display their names in the console window:
+<pre>
+static void Main(string[] args)
+    {
+
+        Type type = typeof(Customer);
+        PropertyInfo[] propertyInfo = type.GetProperties();
+        Console.WriteLine("The list of properties of the Customer class are:--");
+        foreach (PropertyInfo pInfo in propertyInfo)
+        {
+            Console.WriteLine(pInfo.Name);
+        }
+    }
+</pre>
+
+
+Another resource I found so useful:
+<pre>
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using System.Reflection;
+    
+    namespace ReflectionTest
+    {
+        class Program
+        {
+            private static int a = 5, b = 10, c = 20;
+    
+            static void Main(string[] args)
+            {
+                Console.WriteLine("a + b + c = " + (a + b + c));
+                Console.WriteLine("Please enter the name of the variable that you wish to change:");
+                string varName = Console.ReadLine();
+                Type t = typeof(Program);
+                FieldInfo fieldInfo = t.GetField(varName, BindingFlags.NonPublic | BindingFlags.Static);
+                if(fieldInfo != null)
+                {
+                    Console.WriteLine("The current value of " + fieldInfo.Name + " is " + fieldInfo.GetValue(null) + ". You may enter a new value now:");
+                    string newValue = Console.ReadLine();
+                    int newInt;
+                    if(int.TryParse(newValue, out newInt))
+                    {
+                        fieldInfo.SetValue(null, newInt);
+                        Console.WriteLine("a + b + c = " + (a + b + c));
+                    }
+                    Console.ReadKey();
+                }
+            }
+        }
+    }
+</pre>
+<a href="#link7">[7]</a>
                             </p>
 
                             <br>
@@ -584,7 +671,14 @@
                             [6]<a id="link6" target="_blank" href="https://www.infoworld.com/article/3027240/how-to-work-with-reflection-in-c.html#:~:text=Reflection%20in%20C%23%20is%20used%20to%20retrieve%20metadata%20on%20types%20at%20runtime.&text=In%20using%20reflection%2C%20you%20get,types%20defined%20in%20the%20System.">
                                 InfoWorld - How to work with reflection in C#</a>
                             <br>
+                            [7]<a id="link7" target="_blank" href="https://csharp.net-tutorials.com/reflection/introduction/">
+                                CSharp.Net - Reflection introduction</a>
+                            <br>
+                            [8]<a id="link8" target="_blank" href="https://www.c-sharpcorner.com/uploadfile/mahesh/gdi-namespaces-and-classes-in-net/">
+                                CSharp Corner - GDI+ Namespaces and Classes in .NET</a>
+                            <br>
                             
+
                         </div>
                         <!--Grid column-->
                         <!--Grid column CENTER-->
