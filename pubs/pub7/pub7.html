@@ -445,7 +445,84 @@
                                 </b>
                             </h5>
                             <p>
-                                
+                            When we get an user's input, often we're talking about String objects.
+                            Strings are list of characters enclosed between two quotes "". For example like this "hello".
+                            But, also these are strings: "1", "2.4567", "Cybersecurity", "23-9-1988".
+                            These strings as we can see, can be also variuos types of data. The first can be seen as an integer, 
+                            the second as a floating point value, the thind as a String and the last one as a date.
+                            The operation of changing type to a value it's called <b>Parsing</b>.
+                            Obviously we have to check some weird cases, for example when a dash is inside a string and we want
+                            to parse it as a double.
+                            This is the code I wrote in my application to understand what type is the most suitable for an input.  
+<pre>
+    // GUESS THE TYPE OF A VARIABLE
+    public String guessType(ArrayList inputs)
+    {
+        String result = "String";
+        String firstValue = (string)inputs[0];
+
+        // check Date type
+        DateTime dateValue;
+        if (DateTime.TryParse(firstValue, out dateValue))
+        {
+            for (int i = 0; i < inputs.Count; i++)
+            {
+                if ((string)inputs[i] != "" && !DateTime.TryParse((string)inputs[i], out dateValue))
+                {
+                    break;
+                }
+
+            }
+            result = "Date";
+        }
+
+        // check Int type
+        int intValue;
+        if (int.TryParse(firstValue, out intValue))
+        {
+            for (int i = 0; i < inputs.Count; i++)
+            {
+                if ((string)inputs[i] != "" && !int.TryParse((string)inputs[i], out intValue))
+                {
+                    break;
+                }
+
+            }
+            result = "Int";
+        }
+
+        // check Double type
+        double doubleValue;
+        if (double.TryParse(firstValue, out doubleValue))
+        {
+            for (int i = 0; i < inputs.Count; i++)
+            {
+                if ((string)inputs[i] != "" && !double.TryParse((string)inputs[i], out doubleValue))
+                {
+                    break;
+                }
+
+            }
+            result = "Double";
+        }
+
+        // check Bool type
+        bool boolValue;
+        if (bool.TryParse(firstValue, out boolValue))
+        {
+            for (int i = 0; i < inputs.Count; i++)
+            {
+                if ((string)inputs[i] != "" && !bool.TryParse((string)inputs[i], out boolValue))
+                {
+                    break;
+                }
+
+            }
+            result = "Bool";
+        }
+        return result;
+    }
+</pre>
                             </p>
 
                             <br>
