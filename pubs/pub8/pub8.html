@@ -169,7 +169,110 @@
                                 </b>
                             </h5>
                             <p>
-                                
+                                In Statistics, we have a lot of methods to extract data about a population or just a sample of that.
+                                When we have a set of items, let's take the sets of all (10 in this example :) )students in the Cybersecurity course (as always),
+                                we can apply all of these functions to take informations about them.
+                                The central tendency is the thing that tries to describe in a meaningful way the distribution
+                                we're analyzing. So, the goal of this measures is to extract few data/values that can be so much representative
+                                of the larger set of objects.
+                                Central tendency is often called Central location or Summary Statistics.
+                                The mean, the median and the mode are the most common ways to extract some menaingful data.
+                                Maybe the mean (also called average) is the most absolutely common and famous.
+                                We've seen in previous lessons some types to compute the arithmetic mean (but there are also other types of these,
+                                like the geometric mean), this value explain just the average value of the larger sets.
+                                The most common way to compute this is the naive computation (so summing all the values and then divide it by 
+                                the number of the set), but we've seen this is a good way to get errors (from the compiler).
+                                Others formulas/methods to computer in a good way the mean/average is using the Kahan Sum or the Knuth algorithm.
+                                So, just to take a general visual example, let's take and measure the students.
+                                <style type="text/css">
+                                    .tg  {border-collapse:collapse;border-spacing:0;}
+                                    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                      overflow:hidden;padding:10px 5px;word-break:normal;}
+                                    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                    .tg .tg-0lax{text-align:left;vertical-align:top}
+                                    </style>
+                                    <table class="tg">
+                                    <thead>
+                                      <tr>
+                                        <th class="tg-0lax">Student</th>
+                                        <th class="tg-0lax">1</th>
+                                        <th class="tg-0lax">2</th>
+                                        <th class="tg-0lax">3</th>
+                                        <th class="tg-0lax">4</th>
+                                        <th class="tg-0lax">5</th>
+                                        <th class="tg-0lax">6</th>
+                                        <th class="tg-0lax">7</th>
+                                        <th class="tg-0lax">8</th>
+                                        <th class="tg-0lax">9</th>
+                                        <th class="tg-0lax">10</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="tg-0lax">Heigth</td>
+                                        <td class="tg-0lax">160</td>
+                                        <td class="tg-0lax">161</td>
+                                        <td class="tg-0lax">163</td>
+                                        <td class="tg-0lax">158</td>
+                                        <td class="tg-0lax">160</td>
+                                        <td class="tg-0lax">157</td>
+                                        <td class="tg-0lax">169</td>
+                                        <td class="tg-0lax">170</td>
+                                        <td class="tg-0lax">200</td>
+                                        <td class="tg-0lax">210</td>
+                                      </tr>
+                                    </tbody>
+                                    </table>
+                                    <br>
+                                    Let's visualize the distribution of the students' height.<br>
+                                    <div class="container"><img src="heigth-distribution.PNG"></div><br>
+                                    We can immediately see that there are two outliers in this sample of data.
+                                    There are 8 students with an arithmetic mean of the heigth of 162.25cm, and 
+                                    other two student with a mean of 205cm. The mean of the total sample is JUST 170.8cm.
+                                    So, this isn't a good value for this distribution, we have to apply other types of measures
+                                    of the central tendency. One other method is the median. The median is the value in the middle
+                                    of a sorted list of data. So, if we take our students and we sort the data, we have this:<br>
+                                    <table class="tg">
+                                        <tbody>
+                                          <tr>
+                                            <td class="tg-0lax">157</td>
+                                            <td class="tg-0lax">158</td>
+                                            <td class="tg-0lax">160</td>
+                                            <td class="tg-0lax">160</td>
+                                            <td class="tg-0lax">161</td>
+                                            <td class="tg-0lax">163</td>
+                                            <td class="tg-0lax">169</td>
+                                            <td class="tg-0lax">170</td>
+                                            <td class="tg-0lax">200</td>
+                                            <td class="tg-0lax">210</td>
+                                          </tr>
+                                        </tbody>
+                                        </table>
+                                        <br>
+                                        Now we can see there isn't a value just in the middle, we have two value in the middle
+                                        because they have 4 elements on the left and 4 elements on the right. Or better, 4 values
+                                        less or equal than them and 4 values greater or equal than them.
+                                        So, we have two median values, but they are 161cm and 163 cm and these values don't describe
+                                        in a good way our distribution.
+                                        An other type of measurement is the mode. The mode is the most common and recurrent value in the
+                                        distribution.  As we can see in the previuos chart (histogram) the mode is 160cm, because is the only
+                                        value present two times.<br>
+                                        But we have other types of measures of central tendency that help us to understand better the data.
+                                        I'm calling about Variance and Standard Deviation.
+                                        As written on WikiPedia <a href="#link4">[4]</a>:
+                                        <i>"In probability theory and statistics, variance is the expectation of the squared deviation 
+                                        of a random variable from its mean. Informally, it measures how far a set of numbers is 
+                                        spread out from their average value. Variance has a central role in statistics, where 
+                                        some ideas that use it include descriptive statistics, statistical inference, hypothesis 
+                                        testing, goodness of fit, and Monte Carlo sampling. Variance is an important tool in the 
+                                        sciences, where statistical analysis of data is common. The variance is the square of the 
+                                        standard deviation, the second central moment of a distribution, and the covariance of the 
+                                        random variable with itself, and it is often represented by sigma^2 or Var(X)."</i>
+                                        So, the actual Variance is computed summing from i=1 to n all the (xi - mean)^2, all divided by n.
+                                        <br>
+                                        <div class="container"><img src="variance.svg"></div><br>
+                                        
                             </p>
                             <h5>
                                 <b>11_R) What are the most common types of means known? Find 1 example where 
@@ -249,8 +352,35 @@
 
                             <!--REFERENCES-->
                             <h4><b>References</b></h4>
-                            [1]<a id="link1" target="_blank" href="https://en.wikipedia.org/wiki/Marginal_distribution">
-                                Wikipedia - Marginal distribution</a>
+                            [1]<a id="link1" target="_blank" href="https://statistics.laerd.com/statistical-guides/measures-central-tendency-mean-mode-median.php#:~:text=The%20mean%20(often%20called%20the,the%20median%20and%20the%20mode.">
+                                Laerd Statistics - Measures of Central Tendency</a>
+                            <br>
+                            [2]<a id="link2" target="_blank" href="https://en.wikipedia.org/wiki/Summary_statistics">
+                                WikiPedia - Summary Statistics</a>
+                            <br>
+                            [3]<a id="link3" target="_blank" href="https://en.wikipedia.org/wiki/Central_tendency">
+                                WikiPedia - Central Tendency</a>
+                            <br>
+                            [4]<a id="link4" target="_blank" href="https://en.wikipedia.org/wiki/Variance">
+                                WikiPedia - Variance</a>
+                            <br>
+                            [5]<a id="link5" target="_blank" href="https://statistics.laerd.com/statistical-guides/measures-central-tendency-mean-mode-median.php#:~:text=The%20mean%20(often%20called%20the,the%20median%20and%20the%20mode.">
+                                Laerd Statistics - Measures of Central Tendency</a>
+                            <br>
+                            [6]<a id="link6" target="_blank" href="https://statistics.laerd.com/statistical-guides/measures-central-tendency-mean-mode-median.php#:~:text=The%20mean%20(often%20called%20the,the%20median%20and%20the%20mode.">
+                                Laerd Statistics - Measures of Central Tendency</a>
+                            <br>
+                            [7]<a id="link7" target="_blank" href="https://statistics.laerd.com/statistical-guides/measures-central-tendency-mean-mode-median.php#:~:text=The%20mean%20(often%20called%20the,the%20median%20and%20the%20mode.">
+                                Laerd Statistics - Measures of Central Tendency</a>
+                            <br>
+                            [8]<a id="link8" target="_blank" href="https://statistics.laerd.com/statistical-guides/measures-central-tendency-mean-mode-median.php#:~:text=The%20mean%20(often%20called%20the,the%20median%20and%20the%20mode.">
+                                Laerd Statistics - Measures of Central Tendency</a>
+                            <br>
+                            [9]<a id="link9" target="_blank" href="https://statistics.laerd.com/statistical-guides/measures-central-tendency-mean-mode-median.php#:~:text=The%20mean%20(often%20called%20the,the%20median%20and%20the%20mode.">
+                                Laerd Statistics - Measures of Central Tendency</a>
+                            <br>
+                            [10]<a id="link10" target="_blank" href="https://statistics.laerd.com/statistical-guides/measures-central-tendency-mean-mode-median.php#:~:text=The%20mean%20(often%20called%20the,the%20median%20and%20the%20mode.">
+                                Laerd Statistics - Measures of Central Tendency</a>
                             <br>
                         </div>
                         <!--Grid column-->
