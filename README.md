@@ -1,7 +1,6 @@
 # [edoardoottavianelli.it](https://www.edoardoottavianelli.it)
 
-
-My personal website
+My personal website 💙
 
 If you want to report an error or improvement, just open an [issue](https://github.com/edoardottt/edoardoottavianelli.it/issues)
 
