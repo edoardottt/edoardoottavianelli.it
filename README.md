@@ -4,6 +4,8 @@ My personal website 💙
 
 If you want to report an error or improvement, just open an [issue](https://github.com/edoardottt/edoardoottavianelli.it/issues)
 
+![wallpaper](https://github.com/edoardottt/edoardoottavianelli.it/blob/master/images/wallpaper.png)
+
 Resources:
 
    - [Template](https://mdbootstrap.com)
