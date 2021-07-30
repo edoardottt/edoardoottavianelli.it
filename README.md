@@ -9,4 +9,4 @@ If you want to report an error or improvement, just open an [issue](https://gith
 Resources:
 
    - [Template](https://mdbootstrap.com)
-   - [Instagram web-component](https://github.com/ptkdev-components/webcomponent-instagram-widget)
+   - [Instagram web-component](https://github.com/ptkdev-components/webcomponent-instagram-widget) (currently not working :( [#11](https://github.com/ptkdev-components/webcomponent-instagram-widget/issues/11))
