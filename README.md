@@ -10,3 +10,4 @@ Resources:
 
    - [Template](https://mdbootstrap.com)
    - [Instagram web-component](https://github.com/ptkdev-components/webcomponent-instagram-widget) (currently not working :( [#11](https://github.com/ptkdev-components/webcomponent-instagram-widget/issues/11))
+   - [Embedded Twitter timeline](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview)
