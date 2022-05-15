@@ -6,7 +6,7 @@ My personal website 💙
 
 Resources:
 
-   - [Template](https://mdbootstrap.com)
+   - [HTML/Js Template](https://mdbootstrap.com)
    - [Embedded Twitter timeline](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview)
 
 
