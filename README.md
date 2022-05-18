@@ -10,7 +10,7 @@ Resources:
    - [Embedded Twitter timeline](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview)
 
 
----------
-
+Contributing 🤝
+------
 
 If you want to report an error, just open an [issue](https://github.com/edoardottt/edoardoottavianelli.it/issues) or contact me.
