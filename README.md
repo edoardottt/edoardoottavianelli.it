@@ -2,7 +2,7 @@
 
 My personal website 💙
 
-![wallpaper](https://github.com/edoardottt/edoardoottavianelli.it/blob/master/images/wallpaper.png)
+![wallpaper](https://github.com/edoardottt/images/blob/main/edoardoottavianelli.it/wallpaper.png)
 
 Resources:
 
