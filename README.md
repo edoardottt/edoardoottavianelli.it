@@ -9,6 +9,9 @@ Resources:
    - [HTML/Js Template](https://mdbootstrap.com)
    - [Embedded Twitter timeline](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview)
 
+Redirects:
+
+   - [vrenzola.org](https://vrenzola.org) ---> [edoardoottavianelli.it](https://www.edoardoottavianelli.it/)
 
 Contributing 🤝
 ------
