@@ -11,7 +11,8 @@ Resources:
 
 Redirects:
 
-   - [vrenzola.org](http://vrenzola.org) ---> [edoardoottavianelli.it](https://www.edoardoottavianelli.it/)
+   - [vrenzola.org](http://vrenzola.org)
+   - [edoardottt.com](http://edoardottt.com)
 
 Contributing 🤝
 ------
