@@ -13,6 +13,7 @@ Redirects:
 
    - [vrenzola.org](http://vrenzola.org)
    - [edoardottt.com](http://edoardottt.com)
+   - [pucchiacca.org](http://pucchiacca.org)
 
 Contributing 🤝
 ------
