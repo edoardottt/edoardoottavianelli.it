@@ -7,7 +7,9 @@ My personal website 💙
 Resources:
 
    - [HTML/Js Template](https://mdbootstrap.com)
+<!--
    - [Embedded Twitter timeline](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview)
+-->
 
 Redirects:
 
