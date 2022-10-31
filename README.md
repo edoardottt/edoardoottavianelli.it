@@ -11,12 +11,6 @@ Resources:
    - [Embedded Twitter timeline](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview)
 -->
 
-Redirects:
-
-   - [edoardottt.com](http://edoardottt.com)
-   - [vrenzola.org](http://vrenzola.org)
-   - [pucchiacca.org](http://pucchiacca.org)
-
 Contributing 🤝
 ------
 
