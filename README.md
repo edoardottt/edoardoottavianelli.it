@@ -4,14 +4,17 @@ My personal website 💙
 
 ![wallpaper](https://github.com/edoardottt/images/blob/main/edoardoottavianelli.it/wallpaper.png)
 
-Resources:
 
-   - [HTML/Js Template](https://mdbootstrap.com)
+Under `edoardoottavianelli.it/r/*` you can find all the redirects to my social handles e.g. [edoardoottavianelli.it/r/github](https://www.edoardoottavianelli.it/r/github)
+
+
+
+Resources:
 <!--
    - [Embedded Twitter timeline](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview)
 -->
 
-Under `edoardoottavianelli.it/r/*` you can find all the redirects to my social handles e.g. [edoardoottavianelli.it/r/github](https://www.edoardoottavianelli.it/r/github)
+   - [HTML/Js Template](https://mdbootstrap.com)
 
 Contributing 🤝
 ------
