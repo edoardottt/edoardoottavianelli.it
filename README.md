@@ -14,7 +14,7 @@ Resources:
    - [Embedded Twitter timeline](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview)
 -->
 
-   - [HTML/Js Template](https://mdbootstrap.com)
+   - [HTML/JS Template](https://mdbootstrap.com)
 
 Contributing 🤝
 ------
