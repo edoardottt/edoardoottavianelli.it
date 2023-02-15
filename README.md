@@ -7,6 +7,7 @@ My personal website 💙
 
 Under `edoardoottavianelli.it/r/*` you can find all the redirects to my (public) social profiles e.g. [edoardoottavianelli.it/r/github](https://www.edoardoottavianelli.it/r/github)
 
+If you want to contact me in a secure way use this file https://www.edoardoottavianelli.it/.well-known/keybase.txt 
 
 
 Resources:
