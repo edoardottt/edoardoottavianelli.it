@@ -1,5 +1,5 @@
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { 
+@media (min-width: @screen-md-min) {
     .little-hidden {
         visibility: visible;
     }
@@ -7,4 +7,9 @@
 
 .little-hidden {
     visibility: collapse;
+}
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
